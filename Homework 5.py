@@ -1,6 +1,9 @@
+# Create empty list
 x = []
-while len(x) < 4:
-    if len(x) < 4:
+# Retrieved number of number and Checking minus number.
+n = int(input("How many numbers do you want? :"))
+while len(x) < n:
+    if len(x) < n:
         num = int(input("Enter your number :"))
         if num >= 0:
             x.append(num)
@@ -18,7 +21,9 @@ for i in range(len(x)):
             #finding maximun value in each pair.
                 x[i],x[j]=x[j],x[i] 
 
+# Join number in list.
 result=''.join(x)
+# Print Largest number form.
 print(result)
 print(x)
 
